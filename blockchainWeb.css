@@ -1,0 +1,98 @@
+.container-fluid img{
+    margin:185px;
+  
+}
+div.image{
+    background-color:#282727;
+    height:100%;
+    justify-content: center;
+}
+.row{
+    padding-left: unset;
+}
+h5{
+    margin: 20px;
+    font-size: large;
+    margin-top: 0%;
+}
+div.col-lg-6{
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    padding:75px 100px;
+    color: white;
+  
+
+   
+}
+form{
+    text-align: left;
+}
+input{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    
+    margin-left: 200px;
+    background-color: black;
+    border-radius: 9px;
+    
+}
+body{
+    margin-left:unset;
+}
+input::placeholder{
+    color: rgb(250, 253, 253);
+}
+
+#inPass{
+    background: black;
+    color: white;
+}
+#inPass::placeholder{
+    color: white;
+}
+input#exampleInputEmail1.form-control{
+    background-color:rgb(21, 20, 20);
+}
+input#exampleInputEmail1.form-control::placeholder{
+    
+    color:white;
+}
+input#exampleInputPassword1.form-control{
+    background-color: black;
+}
+input#exampleInputPassword1.form-control::placeholder{
+    color: white;
+}
+input#exampleInputUsername1.form-control{
+    background-color: black;
+}
+input#exampleInputUsername1.form-control::placeholder{
+    color:white;
+}
+input#exampleInputConfirmPassword1.form-control{
+    background-color: black;
+}
+input#exampleInputConfirmPassword1.form-control::placeholder{
+    color: white;
+}
+div.mb-3{
+    margin: 0px 0px 0px;
+}
+.input p {
+    border: 1px solid white;
+    font-size:12px;
+    padding: 9px;
+    display:block;
+    text-align: start;
+    border-radius: 7px;
+    margin:3px;
+    padding: 10px;
+}
+.input i{
+    background-color: aquamarine;
+    padding: 7px;
+    
+}

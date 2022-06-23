@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+					<a href="#">forget password?</a>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" id="exampleInputEmail1" placeholder="Email" onkeyup="displaymailError()" required="">
+					<div id="emailHelp"></div>
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+<script>
+	 function displayEmailError() {
+        document.getElementById('emailHelp').style.display = 'block';
+        let element = document.getElementById('exampleInputEmail1').value;
+        if (!isValidationEmail(element)) {
+            document.getElementById('emailHelp').innerHTML = 'Please enter a valid Email';
+            document.getElementById('exampleInputEmail1').style.border = '1px solid tomato';
+        }
+        else {
+            document.getElementById('emailHelp').style.display = 'none';
+            document.getElementById('exampleInputEmail1').style.border = '1px solid white'
+        }
+    }
+
+    function isValidationEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (email === "" || email === "undefined") {
+            return false;
+        }
+        return re.test(String(email).toLowerCase());
+    }
+</script>
+</html>
